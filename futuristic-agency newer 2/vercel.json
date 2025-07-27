@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/:locale(en|fa)/:path*",
+      "destination": "/:locale"
+    },
+    {
+      "source": "/:locale(en|fa)",
+      "destination": "/:locale"
+    },
+    {
+      "source": "/",
+      "destination": "/en"
+    }
+  ]
+}
